@@ -1,0 +1,35 @@
+@import "../../config.scss/mixins.scss";
+
+.search_container{
+padding: 100px;
+    .search_title{
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        @include md{
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+    .searchNotFound{
+         display: flex;
+         justify-content: center;
+         align-items: center ;
+        width: 100%;
+        color: white;
+         .img_center{
+            width: 500px;
+            // border: 1px solid black;
+             @include md {
+                    width: 300px;
+                    min-width: 250px;
+                }
+                img{
+                    width: 100%;
+                }
+                @include md {
+                    font-size: 16px;
+                }
+            }
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../config.scss/mixins.scss";
+.video_popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .opacity_layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:  #04152db9;
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    transition: opacity 600ms;
+  }
+  .video_container{
+    position: relative;
+    width: 600px;
+    height: 350px; 
+    border-radius: 10px;
+    padding: 0 10px;
+
+    @include mdSm{
+      width: 430px;
+      height: 300px;
+    }
+    @include sm{
+      width: 370px;
+      height: 250px;
+    }
+    .btn{
+        position: absolute;
+        right: -47px;
+        top: -22px;
+        color: white;
+        z-index: 11;
+        cursor: pointer;
+    }
+  }
+}

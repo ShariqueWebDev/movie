@@ -1,0 +1,80 @@
+@import "../../config.scss/mixins.scss";
+.footer {
+    background-color: #04152d;
+    padding: 50px 0;
+    color: white;
+    position: relative;
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuItems {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        .menuItem {
+            transition: all ease 0.3s;
+            cursor: pointer;
+            font-size: 16px;
+            @include md {
+                font-size: 14px;
+            }
+            &:hover {
+                color: var(--pink);
+            }
+        }
+    }
+    .infoText {
+        margin: 20px auto;
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.5;
+        text-align: center;
+        max-width: 800px;
+        margin-bottom: 20px;
+        @include md {
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+    }
+    .copy_rights{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .socialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .icon {
+            width: 60px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            font-size: 22px;
+            &:hover {
+                box-shadow: 0 0 0.625em var(--pink);
+                color: var(--pink);
+            }
+            @include md {
+                font-size: 19px;
+            }
+        }
+        @include md {
+            gap: 10px;
+        }
+    }
+}
