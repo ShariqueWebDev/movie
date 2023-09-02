@@ -89,9 +89,9 @@
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 50px;
-        gap: 20px;
+        gap: 25px;
         @include md {
-            gap: 10px;
+            // gap: 10px;
         }
         .movieCard {
             .posterBlock {
